@@ -1,0 +1,89 @@
+/* prevent overflow */
+img, embed, object,video{
+	max-width: 100:%;
+}
+/*********************************************************BREAKPOINT (mobile phone) ********************************************/
+
+@media screen and (max-width:485px){
+	
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+	/*		HEADER		*/
+
+	/* .heading{ */
+		/* order: 1; */
+		/* width: 100%; */
+	/* } */
+
+/*			FILTERS			*/
+/*			BREADCRUMBS		*/
+/*			MAP		*/
+	#map-container{
+		display: none;
+		width: 30%;
+	}
+
+/*			NAME		*/
+/*			PHOTO		*/
+/*			REVIEW		*/
+/*			FOOTER		*/
+
+
+/*********************************************************BREAKPOINT ( tablet) ********************************************/
+
+/* first breakpoint at about 500px (mobile phone -> tablet) */
+
+@media screen and (min-width:486px) and (max-width:702px){
+		/* .combined{ */
+			/* order: 2; */
+			/* width: 50%; */
+		/* } */
+		
+/*			HEADER		*/
+/*			FILTERS			*/
+/*			BREADCRUMBS		*/
+/*			MAP		*/
+	#map-container{
+		width: 80%;
+	}
+	.filter-options{
+		width: 20%;
+	}
+/*			NAME		*/
+/*			PHOTO		*/
+/*			REVIEW		*/
+/*			FOOTER		*/
+	
+
+
+
+
+/*********************************************************BREAKPOINT ( laptop) ********************************************/
+
+@media screen and (min-width: 702px){
+
+	/* .container{ */
+		/* margin: 2% auto; */
+		/* width: 96%; */
+	/* } */
+
+/*			HEADER		*/
+/*			FILTERS			*/
+/*			BREADCRUMBS		*/
+/*			MAP		*/
+	#map-container{
+		width: 65%;
+	}
+	
+	#maincontent{
+		width: 10%;
+	}
+/*			NAME		*/
+/*			PHOTO		*/
+/*			REVIEW		*/
+/*			FOOTER		*/
+	
+	
