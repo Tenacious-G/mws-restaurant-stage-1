@@ -1,27 +1,22 @@
 /* prevent overflow */
 img, embed, object, video{
-	max-width: 100:%;
+	max-width: 100%;
 }
 
-		.container{
-			display: flex;
-			flex-wrap: wrap;
-						/* flex-flow: wrap; */
-		}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
 		
 /*********************************************************BREAKPOINT (mobile phone) ********************************************/
 
 @media screen and (max-width:485px){
 	
 
-	/*		HEADER		*/
+/*		HEADER		*/
 	nav{
 		height: 40px;
 	}
-	/* .heading{ */
-		/* order: 1; */
-		/* width: 100%; */
-	/* } */
 
 /*			BREADCRUMBS			*/
 	#breadcrumb{
@@ -30,53 +25,37 @@ img, embed, object, video{
 /*			FILTERS	*/
 
 	.filter-options{
-		/* order: 3; */
 		width: 100%;
 	}
 	
 	
 	#neighborhoods-select{
-		/* order: 40; */
 		width: 95%;
 	}
 	#cuisines-select{
 		display: inline;
-		/* order: 50; */
 		width: 95%;
 	}
+
 /*			MAP		*/
 	#map-container{
-		/* display: none; */
-		/* height: 250px; */
 		width: 100%;
-	}
-		#map{
-		/* display: none; */
-		/* position: static !important; //don't use! */
-		/* width: 10%; */
 	}
 }
 /*			NAME		*/
-		#restaurants-list{
-		/* order: 2; */
+	#restaurants-list{
 		margin-top: 20px;
-		/* padding: none; */
 		width: 100%;
 	}
 		#restaurants-list li{
-		/* order: 2; */
-		/* margin-top: 20px; */
 		padding: 4px;
 		width: 85%;
 	}
-#restaurant-img h1 p a{
-	/* padding: 15px; */
-}	
 	
 /*			PHOTO		*/
-#restaurant-img {
-	width: 100%;
-}
+	#restaurant-img {
+		width: 100%;
+	}
 /*			REVIEW		*/
 /*			FOOTER		*/
 
@@ -87,15 +66,15 @@ img, embed, object, video{
 
 @media screen and (min-width:486px) and (max-width:702px){
 
-	/*		FILTERS		*/
+/*		FILTERS		*/
 	#neighborhoods-select{
 		margin: 30px;
-		/* order: 40; */
 		width: 39%;
 	}
-li{
-	display: inline;
-}
+	
+	li{
+		display: inline;
+	}
 
 }
 
@@ -103,25 +82,21 @@ li{
 
 @media screen and (min-width: 702px){
 
-	/* .container{ */
-		/* margin: 2% auto; */
-		/* width: 96%; */
-	/* } */
-
 /*			HEADER		*/
 /*			BREADCRUMBS			*/
 /*			FILTERS	*/
 /*			MAP		*/
 	#map{
-		width: 65%;
+		width: 85%;
 	}
 	
 	#maincontent{
-		width: 10%;
+		margin: auto;
+		width: 85%;
 	}
 	
-		#nav{
-		width: 65%;
+	#nav{
+		width: 85%;
 	}
 /*			NAME		*/
 /*			PHOTO		*/
