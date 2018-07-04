@@ -315,3 +315,14 @@ original
 	text-transform: uppercase;
 	width: 20%;
 }
+
+
+.skip-link{
+	background-color: orange;
+	position: absolute;
+	top: -50px;
+}
+
+.skip-link:focus{
+	top: 0px;
+}
