@@ -4,43 +4,34 @@ self.addEventListener('install', function(event){
 
 	//if the Promise rejects, then the Promise has failed and this SW should be discarded
 	
-	const assets = [
-		'./',
-		'/index.html',
-		'/restaurant.html?id=1',
-		'/restaurant.html?id=2',
-		'/restaurant.html?id=3',
-		'/restaurant.html?id=4',
-		'/restaurant.html?id=5'
-		// './js/main.js',
-		// './js/dbhelper.js',
-		// './js/restaurant-info.js',
-		// './css/responsiveness.css',
-		// './css/styles.css',
-		// './img/2.jpg',
-		// './img/4.jpg'
-		];
-	
 	event.waitUntil(
 	//open the 'restaurants-cache' and add the contents of the cache to it
 		caches.open('restaurants-cache').then(function(cache){
-			return cache.addAll(assets);
-			// return cache.addAll([
-		// './'
-		// // '/index.html',
-		// // '/restaurant.html?id=1',
-		// // '/restaurant.html?id=2',
-		// // '/restaurant.html?id=3',
-		// // '/restaurant.html?id=4',
-		// // '/restaurant.html?id=5',
-		// // './js/main.js',
-		// // './js/dbhelper.js',
-		// // './js/restaurant-info.js',
-		// // './css/responsiveness.css',
-		// // './css/styles.css',
-		// // './img/2.jpg',
-		// // './img/4.jpg'
-		// ]);
+			// return cache.addAll(assets);
+			return cache.addAll([
+			'./'
+			'/index.html',
+			'/restaurant.html?id=1',
+			'/restaurant.html?id=2',
+			'/restaurant.html?id=3',
+			'/restaurant.html?id=4',
+			'/restaurant.html?id=5',
+			'/restaurant.html?id=6',
+			'/restaurant.html?id=7',
+			'/restaurant.html?id=8',
+			'/restaurant.html?id=9',
+			'./js/main.js',
+			'./js/dbhelper.js',
+			'./js/restaurant-info.js',
+			'./css/responsiveness.css',
+			'./css/styles.css',
+			'./img/1.jpg',
+			'./img/2.jpg',
+			'./img/3.jpg',
+			'./img/4.jpg'
+			'./img/5.jpg',
+			'./img/6.jpg',
+			]);
 		})
 	);
 	
