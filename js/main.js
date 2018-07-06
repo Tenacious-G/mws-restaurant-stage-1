@@ -152,7 +152,8 @@ createRestaurantHTML = (restaurant) => {
   
   li.append(image);
 
-  const name = document.createElement('h1');
+  // for a11y, use h2 because h1 already used in index.html
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
